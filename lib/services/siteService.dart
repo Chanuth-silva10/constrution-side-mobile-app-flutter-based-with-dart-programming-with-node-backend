@@ -6,7 +6,7 @@ import 'package:flutter_application_1/models/Site.dart';
 class SiteService {
   Future<SiteList> getAllSites() async {
     final response =
-        await http.get(Uri.parse('http://localhost:3001/api/site'));
+        await http.get(Uri.parse('https://aaaaa-9u7y.onrender.com/api/site'));
 
     if (response.statusCode == 200) {
       // If the server did return a 200 OK response,
