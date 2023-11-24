@@ -24,7 +24,7 @@ class ItemService {
 
   Future<ItemList> getItemBySupplier(String supplierId) async {
     final response = await http.get(Uri.parse(
-        'https://aaaaa-9u7y.onrender.com/api/items/supplier/$supplierId'));
+        'https://constructio-backend-site.onrender.com/api/items/supplier/$supplierId'));
 
     if (response.statusCode == 200) {
       // If the server did return a 200 OK response,

@@ -5,8 +5,8 @@ import 'package:flutter_application_1/models/Delivery.dart';
 
 class DeliveryService {
   Future<DeliveryList> getAllDeliveries() async {
-    final response = await http
-        .get(Uri.parse('https://aaaaa-9u7y.onrender.com/api/deliveries'));
+    final response = await http.get(Uri.parse(
+        'https://constructio-backend-site.onrender.com/api/deliveries'));
 
     if (response.statusCode == 200) {
       // If the server did return a 200 OK response,
@@ -23,7 +23,7 @@ class DeliveryService {
   Future<int> createDelivery(Map<String, dynamic> data) async {
     print(data);
     final response = await http.post(
-      Uri.parse('https://aaaaa-9u7y.onrender.com/api/deliveries'),
+      Uri.parse('https://constructio-backend-site.onrender.com/api/deliveries'),
       headers: <String, String>{
         'Content-Type': 'application/json; charset=UTF-8',
       },
