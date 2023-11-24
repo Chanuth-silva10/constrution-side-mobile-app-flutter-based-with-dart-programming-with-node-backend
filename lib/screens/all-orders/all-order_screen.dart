@@ -9,14 +9,16 @@ import '../../enums.dart';
 class AllOrderScreen extends StatelessWidget {
   static String routeName = "/order";
 
+  const AllOrderScreen({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: CustomAppBar(
+      appBar: const CustomAppBar(
         title: "All Orders",
       ),
       body: Body(),
-      bottomNavigationBar: BottomNavBar(selectedMenu: MenuState.orders),
+      bottomNavigationBar: const BottomNavBar(selectedMenu: MenuState.orders),
     );
   }
 }
