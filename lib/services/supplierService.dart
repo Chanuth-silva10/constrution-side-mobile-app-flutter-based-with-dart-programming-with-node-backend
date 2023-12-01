@@ -6,7 +6,7 @@ import 'package:flutter_application_1/models/Supplier.dart';
 class SupplierService {
   Future<SupplierList> getAllSuppliers() async {
     final response = await http.get(Uri.parse(
-        'https://constructio-backend-site.onrender.com/api/supplier'));
+        'https://build-craft-backend-site.onrender.com/api/supplier'));
 
     if (response.statusCode == 200) {
       // If the server did return a 200 OK response,

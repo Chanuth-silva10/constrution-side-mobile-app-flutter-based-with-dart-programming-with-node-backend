@@ -6,7 +6,7 @@ import 'package:flutter_application_1/models/Site.dart';
 class SiteService {
   Future<SiteList> getAllSites() async {
     final response = await http.get(
-        Uri.parse('https://constructio-backend-site.onrender.com/api/site'));
+        Uri.parse('https://build-craft-backend-site.onrender.com/api/site'));
 
     if (response.statusCode == 200) {
       // If the server did return a 200 OK response,
